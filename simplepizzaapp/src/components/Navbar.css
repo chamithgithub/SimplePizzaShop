@@ -1,0 +1,42 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+nav .title{
+
+   font-style: italic;
+   font-family: 'Reem Kufi', sans-serif;
+   font-size: 1.5rem;
+   margin-right: 2rem;
+   text-decoration: none;
+}
+nav {
+   background-color: #a90909ab;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0.5rem;
+   
+}
+
+nav ul {
+   list-style: none;
+   display: fl2rem;
+   gap: 1.2rem;
+}
+
+nav ul li {
+   display: inline;
+   padding: 1rem;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   /* text-decoration: underline; */
+   color: rgba(41, 26, 26, 0.887);
+}
