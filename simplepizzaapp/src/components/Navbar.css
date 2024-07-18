@@ -9,7 +9,9 @@ nav .title{
    font-family: 'Reem Kufi', sans-serif;
    font-size: 1.5rem;
    margin-right: 2rem;
+   font-weight: bold;
    text-decoration: none;
+
 }
 nav {
    background-color: #a90909ab;
@@ -22,21 +24,30 @@ nav {
 
 nav ul {
    list-style: none;
-   display: fl2rem;
+   display: flex;
    gap: 1.2rem;
 }
 
 nav ul li {
-   display: inline;
-   padding: 1rem;
+   list-style: none;
 }
 
 nav ul li a {
-   color: white;
+   display: block;
    text-decoration: none;
+   color: white;
+   padding: 0.5rem;
+   margin: 0 0.5rem;
+   border-radius: 0.5rem;
 }
 
-nav ul li a:hover {
+nav ul li a:not(.active):hover {
    /* text-decoration: underline; */
    color: rgba(41, 26, 26, 0.887);
+   background-color: #eae138;
+}
+.active {
+   
+   background:#1d4ed8;
+
 }
