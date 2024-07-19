@@ -1,4 +1,7 @@
 import React from 'react'
+import images from '../data/images';
+
+import Carosuel from '../components/Carousel';
 
 const Home = () => {
   
@@ -6,7 +9,14 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      <h3>home page sago</h3>
+      <Carosuel>
+        {images.map((image, index) => {
+          return <img key={index} src={image.imgURL} alt={image.imgAlt} />;
+        })}
+      </Carosuel>
+
+
+
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat error tempora ipsa nulla veniam eni
         m praesentium. Minima aliquid aliquam, est delectus ipsa qui libero fugiat facere quisquam totam. Acc
@@ -14,18 +24,7 @@ const Home = () => {
         enim praesentium. Minima aliquid aliquam, est delectus ipsa qui libero fugiat facere quisquam totam.
         enim praesentium. Minima aliquid aliquam, est delectus ipsa qui libero fugiat facere quisquam totam
         . Accusantium optio quae sed perferendis. Ex ducimus, beatae perferendis temporibus nobis iste, ips
-        a ullam rem, dolor ea non? Iusto amet possimus adipisci id voluptates, laudantium, unde itaque plac
-        eat, doloremque veniam sit inventore ad aperiam maxime. Soluta, repellendus! Repellat deserunt null
-        
-        a, excepturi fugiat reprehenderit adipisci inventore tenetur in numquam doloremque nihil a dolores qui 
-
-        nobis porro exercitationem corporis! Repellendus excepturi et delectus commodi illum sapiente, ut nulla
-         fuga modi aut in quisquam rem sequi quibusdam consequatur, dolore reprehenderit! Laudantium error et r
-         eiciendis officia quisquam magni. Perspiciatis ratione ipsam architecto. Iste sapiente, nobis numquam p
-         rovident molestiae maiores quos laborum tempore corporis aliquam, ab error eum excepturi beatae, unde pl
-         aceat odio! Pariatur suscipit obcaecati, blanditiis error tenetur quisquam, illo voluptate reiciendis seq
-         ui magnam neque itaque sunt. Minus placeat impedit harum aliquid esse nobis voluptatem nihil quis ipsam debitis animi molesti
-         ae officiis, cupiditate est voluptas! Enim fugiat cum delectus ipsum eum in magni, debitis laborum omnis, nobis quis illo 
+         laborum omnis, nobis quis illo 
          
           sunt consequatur ratione, rem minus nulla. Repellendus iste architecto molestiae quos quia! Rem obcaecati dolor in quos fuga, l
           ibero expedita aliquid rerum minima atque nulla dignissimos recusandae ea! Debitis dicta recusandae quos perferendis corrupti n
