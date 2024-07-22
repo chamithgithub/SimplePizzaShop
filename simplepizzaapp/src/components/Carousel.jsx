@@ -84,7 +84,7 @@ function CustomCarousel({ children }) {
                 setActiveIndex(index);
               }}
             ></button>
-          );
+          ); 
         })}
       </div>
 

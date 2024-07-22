@@ -5,7 +5,7 @@
 nav{
   display: flex;
   flex-direction: row;
-  background-color: #a90909ab;
+  background-color: #f5f6fa;
   justify-content: space-between;
   align-items: center;
 }
@@ -41,7 +41,8 @@ nav ul li {
 nav ul li a {
   display: block;
   text-decoration: none;
-  color: white;
+  color: #000000;
+  font-weight: 700;
   padding: 0.5rem;
   margin: 0 0.5rem;
   border-radius: 0.5rem;
@@ -111,7 +112,7 @@ nav ul li a:not(.active):hover {
 
 }
 nav .title{
-  color: #eae138;
+  color: #e84118;
   font-size: large;
 }
 
