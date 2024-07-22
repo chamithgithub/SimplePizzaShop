@@ -1,0 +1,23 @@
+.itemList{
+   margin-top: 1.25rem;
+   background-color: rgba(175, 31, 31, 0.876);
+}
+.itemMenu{
+   display:flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   color: white
+}
+.item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 16rem;
+   height: 16rem;
+   background-color: rgba(175, 31, 31, 0.876);
+   margin: 1rem
+}
