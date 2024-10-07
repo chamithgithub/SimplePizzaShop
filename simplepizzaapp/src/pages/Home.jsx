@@ -4,9 +4,7 @@ import Carosuel from '../components/Carousel';
 import ItemList from '../components/ItemList';
 import Footer from '../components/Footer';
 const Home = () => {
-
-
-
+  
   return (
     <div style={styles.homeContainer} className="home-container">
       <Carosuel>
